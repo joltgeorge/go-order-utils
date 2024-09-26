@@ -17,7 +17,7 @@ type Contracts struct {
 }
 
 var (
-	_AMOY_CONTRACTS = &Contracts{
+	AMOY_CONTRACTS = &Contracts{
 		Exchange:         common.HexToAddress("0xdFE02Eb6733538f8Ea35D585af8DE5958AD99E40"),
 		FeeModule:        common.HexToAddress("0x9A9faEf45C671cc57B3e117c5B3053075416490f"),
 		NegRiskExchange:  common.HexToAddress("0xC5d563A36AE78145C45a50134d48A1215220f80a"),
@@ -27,7 +27,7 @@ var (
 		Conditional:      common.HexToAddress("0x69308FB512518e39F9b16112fA8d994F4e2Bf8bB"),
 	}
 
-	_MATIC_CONTRACTS = &Contracts{
+	MATIC_CONTRACTS = &Contracts{
 		Exchange:         common.HexToAddress("0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E"),
 		FeeModule:        common.HexToAddress("0x56C79347e95530c01A2FC76E732f9566dA16E113"),
 		NegRiskExchange:  common.HexToAddress("0xC5d563A36AE78145C45a50134d48A1215220f80a"),
@@ -41,9 +41,9 @@ var (
 func GetContracts(chainId int64) (*Contracts, error) {
 	switch chainId {
 	case 137:
-		return _MATIC_CONTRACTS, nil
+		return MATIC_CONTRACTS, nil
 	case 80002:
-		return _AMOY_CONTRACTS, nil
+		return AMOY_CONTRACTS, nil
 	default:
 		return nil, fmt.Errorf("invalid chain id")
 	}
