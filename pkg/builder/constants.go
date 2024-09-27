@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	_PROTOCOL_NAME    = crypto.Keccak256Hash([]byte("Polymarket CTF Exchange"))
+	_PROTOCOL_NAME    = crypto.Keccak256Hash([]byte("Prediction One CTF Exchange"))
 	_PROTOCOL_VERSION = crypto.Keccak256Hash([]byte("1"))
 )
 

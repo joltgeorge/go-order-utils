@@ -28,7 +28,7 @@ var (
 	}
 
 	MATIC_CONTRACTS = &Contracts{
-		Exchange:         common.HexToAddress("0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E"),
+		Exchange:         common.HexToAddress("0xbb82b482bc4a7e159759f184c724ae76561a680f"),
 		FeeModule:        common.HexToAddress("0x56C79347e95530c01A2FC76E732f9566dA16E113"),
 		NegRiskExchange:  common.HexToAddress("0xC5d563A36AE78145C45a50134d48A1215220f80a"),
 		NegRiskFeeModule: common.HexToAddress("0x78769D50Be1763ed1CA0D5E878D93f05aabff29e"),
