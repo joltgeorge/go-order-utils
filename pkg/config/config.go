@@ -30,9 +30,9 @@ var (
 	MATIC_CONTRACTS = &Contracts{
 		Exchange:         common.HexToAddress("0xbb82b482bc4a7e159759f184c724ae76561a680f"),
 		FeeModule:        common.HexToAddress("0x56C79347e95530c01A2FC76E732f9566dA16E113"),
-		NegRiskExchange:  common.HexToAddress("0xC5d563A36AE78145C45a50134d48A1215220f80a"),
-		NegRiskFeeModule: common.HexToAddress("0x78769D50Be1763ed1CA0D5E878D93f05aabff29e"),
-		NegRiskAdapter:   common.HexToAddress("0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296"),
+		NegRiskExchange:  common.HexToAddress("0xd2f980127e88c6f55d2dbbabccbffc9ff14f5340"),
+		NegRiskFeeModule: common.HexToAddress("0xf12c16fe6d1f9db269541ac62cf224925306715a"),
+		NegRiskAdapter:   common.HexToAddress("0x3ebcfdfc53f249ced0a7ec0d74647b1a6cc32471"),
 		Collateral:       common.HexToAddress("0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"),
 		Conditional:      common.HexToAddress("0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"),
 	}
