@@ -46,6 +46,15 @@ var (
 		Collateral:       common.HexToAddress("0x56ecfab5E7A6e02d0e4714bd079EE724841bEC10"),
 		Conditional:      common.HexToAddress("0x9c20fed2775cdf526ae7d3d0c598ae0551c5023e"),
 	}
+	BASE_CONTRACTS = &Contracts{
+		Exchange:         common.HexToAddress("0x30917d2ede53a6c67eff867d987923df2c1350ff"),
+		FeeModule:        common.HexToAddress("0x48e805a19cd106890cfc5e553602f05107eb0fe1"),
+		NegRiskExchange:  common.HexToAddress("0x30917d2ede53a6c67eff867d987923df2c1350ff"),
+		NegRiskFeeModule: common.HexToAddress("0x48e805a19cd106890cfc5e553602f05107eb0fe1"),
+		NegRiskAdapter:   common.HexToAddress("0x39bCc509fa6d994EE3c5c55F8EF704AE60788E94"),
+		Collateral:       common.HexToAddress("0xb0262e7fc826b743fe1404ab68e61710d542ae8f"),
+		Conditional:      common.HexToAddress("0x2c0c21C3AE9fE1EF87096466308c4F164272bd2b"),
+	}
 )
 
 func GetContracts(chainId int64) (*Contracts, error) {
@@ -56,6 +65,8 @@ func GetContracts(chainId int64) (*Contracts, error) {
 		return AMOY_CONTRACTS, nil
 	case 11155111:
 		return SEPOLIA_CONTRACTS, nil
+	case 8453:
+		return BASE_CONTRACTS, nil
 	default:
 		return nil, fmt.Errorf("invalid chain id")
 	}
