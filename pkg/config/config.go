@@ -38,12 +38,12 @@ var (
 	}
 
 	SEPOLIA_CONTRACTS = &Contracts{
-		Exchange:         common.HexToAddress("0xabfac4e28f1c9b51521fa2d21cdad837d0104096"),
-		FeeModule:        common.HexToAddress("0xb26abc3c3074899faba0cbd7c7cf521f61cfcf81"),
-		NegRiskExchange:  common.HexToAddress("0xabfac4e28f1c9b51521fa2d21cdad837d0104096"),
-		NegRiskFeeModule: common.HexToAddress("0xb26abc3c3074899faba0cbd7c7cf521f61cfcf81"),
-		NegRiskAdapter:   common.HexToAddress("0x8e498cae6296d4d27568fd72db803c28770f48dd"),
-		Collateral:       common.HexToAddress("0x56ecfab5E7A6e02d0e4714bd079EE724841bEC10"),
+		Exchange:         common.HexToAddress("0xD6bcbD99D98395e8B20D820164CDC00B1628573e"),
+		FeeModule:        common.HexToAddress("0x388d08A0772617AE049f3C7E098d4418712AD4fB"),
+		NegRiskExchange:  common.HexToAddress("0xD6bcbD99D98395e8B20D820164CDC00B1628573e"),
+		NegRiskFeeModule: common.HexToAddress("0x388d08A0772617AE049f3C7E098d4418712AD4fB"),
+		NegRiskAdapter:   common.HexToAddress("0xf0668D534c383ea6E4143595084726F588866bcB"),
+		Collateral:       common.HexToAddress("0x94e80e896a6daE0828B43B7883f100475b3659E7"),
 		Conditional:      common.HexToAddress("0x9c20fed2775cdf526ae7d3d0c598ae0551c5023e"),
 	}
 	BASE_CONTRACTS = &Contracts{
